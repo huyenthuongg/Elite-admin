@@ -1,0 +1,23 @@
+.sidebar{
+  background-color:rgba(167, 113, 126, 1);
+}
+.nav-link{
+  color:white;
+}
+svg{
+  color:black;
+}
+.bi{
+  margin-right: 20px;
+}
+.fs-5{
+  text-align: center;
+}
+.fun_1{
+  text-decoration: none;
+  margin-left: 30px;
+}
+.submenu-text{
+  text-decoration: none;
+  color: white;
+}
