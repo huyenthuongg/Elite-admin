@@ -21,3 +21,21 @@ svg{
   text-decoration: none;
   color: white;
 }
+.change-color {
+  cursor: pointer;
+}
+.color-change {
+  color:black;
+}
+.d-flex li a:hover {
+background-color: rgba(249, 246, 231, 1);
+color: black;
+}
+.ms-1:focus{
+  background-color: rgba(249, 246, 231, 1);
+color: black;
+}
+.d-flex a:focus{
+  color: black;
+  background-color: rgba(249, 246, 231, 1);
+}

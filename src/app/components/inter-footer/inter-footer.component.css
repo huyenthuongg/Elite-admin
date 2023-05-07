@@ -1,0 +1,17 @@
+.content-main{
+  display:flex;
+}
+.content p {
+  margin: 48px auto;
+  margin-right: 50px;
+}
+.content_right p{
+  margin-top: 43px;
+
+}
+.content_right input{
+  width:800px;
+}
+.container .container1.active{
+  border-color: rgba(167, 113, 126, 1);
+}

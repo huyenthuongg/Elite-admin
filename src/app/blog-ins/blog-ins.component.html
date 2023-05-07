@@ -2,20 +2,23 @@
   <table class="tab-main">
     <tr>
       <th>No.</th>
-      <th>Admin's ID</th>
-      <th>Admin's Name</th>
-      <th>Gender</th>
-      <th>Phone Number</th>
+      <th>Blog's ID</th>
+      <th>Thumnail</th>
+      <th>Title</th>
+      <th>Time</th>
+      <th>Describe</th>
       <th>Status</th>
       <th>Edit</th>
     </tr>
     <tr>
       <td>1</td>
-      <td>EA123</td>
-      <td>Nguyen Hoang Tinh</td>
+      <td>EB111</td>
+      <td><img src="\assets\blog\blog_1.png" alt=""></td>
       <td>Male</td>
       <td>0933.290.554</td>
+      <td>There’s something so special about a classic wedding! We love the modern chic touches of Jennifer and Kyle’s day....</td>
       <td>Actived</td>
+
       <td>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square icon1" viewBox="0 0 16 16" (click)="parentModal.show()">
           <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -36,7 +39,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 id="dialog-nested-name1" class="modal-title pull-left">CREATE NEW ACCOUNT</h4>
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">CREATE NEW BLOGS</h4>
         <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="parentModal.hide()">
           <span aria-hidden="true" class="visually-hidden">&times;</span>
         </button>
@@ -44,23 +47,25 @@
       <div class="modal-body">
         <div class="modal-body">
           <DIV class="pop_left">
-            <p>Admin's ID</p>
-            <p>Admin'Name</p>
-            <p>Gender</p>
-            <p>Phone Number</p>
+            <p>Blog's ID</p>
+            <p>Title</p>
+            <p>Time</p>
+            <p>Describe</p>
             <p>Status</p>
+            <p>Thumnail</p>
           </DIV>
           <div class="pop_right">
             <p >
               <input type="textbox">
             </p>
             <p><input type="textbox"></p>
-            <p><input type="textbox"></p>
+            <p><input type="datetime-local"></p>
             <p><input type="textbox"></p>
             <p><select class="status">
               <option>Showed</option>
               <option>Hided</option>
             </select></p>
+            <button class="btn-choose">Choose file</button>
           </div>
         </div>
       </div>
@@ -85,7 +90,7 @@
     </div>
   </div>
 </div>
-<br/>
+<br>
 <pre class="card card-block card-header">{{message}}</pre>
 <ng-template #template>
   <div class="text-center">

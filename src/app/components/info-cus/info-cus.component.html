@@ -1,9 +1,10 @@
+
 <div class="container">
   <table class="tab-main">
     <tr>
       <th>No.</th>
-      <th>Admin's ID</th>
-      <th>Admin's Name</th>
+      <th>Customer's ID</th>
+      <th>Customer's Name</th>
       <th>Gender</th>
       <th>Phone Number</th>
       <th>Status</th>
@@ -11,7 +12,7 @@
     </tr>
     <tr>
       <td>1</td>
-      <td>EA123</td>
+      <td>EA111</td>
       <td>Nguyen Hoang Tinh</td>
       <td>Male</td>
       <td>0933.290.554</td>
@@ -28,15 +29,15 @@
       </td>
     </tr>
   </table>
-  <div>
-    <button class="btn-add" (click)="parentModal.show()">ADD NEW</button>
+   <div>
+    <button class="btn-add"(click)="parentModal.show()">ADD NEW</button>
   </div>
 </div>
 <div class="modal fade" bsModal #parentModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 id="dialog-nested-name1" class="modal-title pull-left">CREATE NEW ACCOUNT</h4>
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">CUSTOMER DETAIL</h4>
         <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="parentModal.hide()">
           <span aria-hidden="true" class="visually-hidden">&times;</span>
         </button>
@@ -44,30 +45,63 @@
       <div class="modal-body">
         <div class="modal-body">
           <DIV class="pop_left">
-            <p>Admin's ID</p>
-            <p>Admin'Name</p>
+            <p>Customer's ID</p>
+            <p>Customer's Name</p>
             <p>Gender</p>
             <p>Phone Number</p>
+            <p>Address</p>
+            <p>Email</p>
             <p>Status</p>
           </DIV>
           <div class="pop_right">
             <p >
-              <input type="textbox">
+              EC111
             </p>
-            <p><input type="textbox"></p>
-            <p><input type="textbox"></p>
-            <p><input type="textbox"></p>
+            <p>Nguyen Hoang Tinh</p>
+            <p>Male</p>
+            <p>0933.290.554</p>
+            <p>Distric 1, TPHCM</p>
+            <p>tinhhoang@gmail.com</p>
             <p><select class="status">
-              <option>Showed</option>
-              <option>Hided</option>
+              <option>Actived</option>
+              <option>Note Actived</option>
             </select></p>
           </div>
         </div>
-      </div>
+        </div>
       <HR/>
+      <div class="container_review">
+        <div class="container_historyor_left">
+          <p><b>#ELITE124</b></p>
+          <div class="reviewSP">
+            <div>
+              <img
+                src="\assets\myprofile\abigail-chiffon_lifestyle_main-hover 3.png"
+                height="120px"
+              />
+            </div>
+            <div class="info_sp">
+              <p><b>1. Sky Satin Dress</b></p>
+              <p>x1</p>
+              <p>Color: Blue</p>
+              <p>Fabrics:</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="status">
+            <p>
+              <img src="\assets\myprofile\ic_round-send.png" /> <b>Delivering</b>
+            </p>
+            <p><b> &nbsp;</b></p>
+            <p>&nbsp;</p>
+            <p><b>TOTAL PRICE</b></p>
+            <p>$189.000</p>
+          </div>
+        </div>
+      </div>
       <div class="btn2">
         <button  class="btn-can" (click)="parentModal.hide()">Cancel</button>
-        <button class="btn-save" (click)="childModal.show()">Save</button>
       </div>
     </div>
   </div>

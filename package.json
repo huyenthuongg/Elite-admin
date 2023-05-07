@@ -1,8 +1,8 @@
 {
   "name": "elite-admin",
   "version": "1.0.0",
-"description": "",
-"main": "index.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -28,6 +28,7 @@
     "express-fileupload": "^1.4.0",
     "jquery": "^3.6.4",
     "mongodb": "^5.3.0",
+    "ngx-bootstrap": "^10.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

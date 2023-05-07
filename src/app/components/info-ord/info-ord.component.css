@@ -3,14 +3,14 @@
   border: 2px solid black;
   border-radius: 5px solid;
 }
-th{
+.tab-main th{
   background-color: rgba(249, 246, 231, 1);
   height:60px;
   border: 2px solid black;
   width:170px;
   text-align: center;
 }
-td{
+.tab-main td{
   height:60px;
   border: 2px solid black;
   width:190px;
@@ -34,9 +34,6 @@ td{
 .modal-body{
   display:flex;
 }
-.modal-body{
-  margin: 0 auto;
-}
 .modal-title{
   text-align: center;
 }
@@ -47,11 +44,13 @@ h4{
   text-align: center;
 }
 .pop_right p{
-  margin-left: 100px;
-  margin-bottom: 18px;
+  margin-left: 300px;
+  /* margin-bottom: 18px; */
+
 }
 .pop_left p{
-margin:0 0 25px;
+/* margin:0 0 25px; */
+margin-left: 50px;
 }
 .btn2{
   text-align: center;
@@ -70,6 +69,9 @@ input{
   border: none;
   border-radius: 5px;
 }
+.modal-body{
+  margin: 0 auto;
+}
 .btn-save{
   width:150px;
   height:40px;
@@ -80,9 +82,14 @@ input{
 .btn-choose{
   margin-left: 100px;
   margin-top:7px;
-
 }
-.modal-body{
-  text-align: center!important;
+.tab-quan{
+  border: 2px solid rgba(167, 113, 126, 1);
+  margin: 20px auto;
+}
+.tab-quan th, td{
+  width:200px;
+  height: 50px;
+  text-align: center;
 }
 

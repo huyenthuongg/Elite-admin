@@ -1,20 +1,18 @@
 import { Component, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import { Router } from 'express';
 @Component({
-  selector: 'app-accounts',
-  templateUrl: './accounts.component.html',
-  styleUrls: ['./accounts.component.css']
+  selector: 'app-blog-itl',
+  templateUrl: './blog-itl.component.html',
+  styleUrls: ['./blog-itl.component.css']
 })
-export class AccountsComponent {
+export class BlogItlComponent {
   modalRef?: BsModalRef;
-  confirmModalRef?: BsModalRef;
   message?: string;
+  confirmModalRef?: BsModalRef;
   confirmResolve?: () => void;
   confirmReject?: () => void;
   bsModalRef?: BsModalRef;
   confirmPromise?: Promise<void>
-  router: any;
   constructor(private modalService: BsModalService) {}
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
@@ -44,9 +42,6 @@ export class AccountsComponent {
       this.confirmReject();
     }
     this.confirmModalRef?.hide();
-  }
-  show(f:any){
-    this.router.navigate(['accounts',f._id])
   }
   openModal1(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
