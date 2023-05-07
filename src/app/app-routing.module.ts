@@ -9,8 +9,8 @@ import { InterImgComponent } from './components/inter-img/inter-img.component';
 import { InterFooterComponent } from './components/inter-footer/inter-footer.component';
 import { ProFabricsComponent } from './components/pro-fabrics/pro-fabrics.component';
 import { ProColorsComponent } from './components/pro-colors/pro-colors.component';
-import { BlogItlComponent } from './blog-itl/blog-itl.component';
-import { BlogInsComponent } from './blog-ins/blog-ins.component';
+import { BlogItlComponent } from './components/blog-itl/blog-itl.component';
+import { BlogInsComponent } from './components/blog-ins/blog-ins.component';
 const routes: Routes = [
   {path:'account', component:AccountsComponent},
   {path:'products', component:ProductsComponent},

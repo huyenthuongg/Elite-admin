@@ -14,8 +14,8 @@ import { InterFooterComponent } from './components/inter-footer/inter-footer.com
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ProFabricsComponent } from './components/pro-fabrics/pro-fabrics.component';
 import { ProColorsComponent } from './components/pro-colors/pro-colors.component';
-import { BlogItlComponent } from './blog-itl/blog-itl.component';
-import { BlogInsComponent } from './blog-ins/blog-ins.component';
+import { BlogItlComponent } from './components/blog-itl/blog-itl.component';
+import { BlogInsComponent } from './components/blog-ins/blog-ins.component';
 @NgModule({
   declarations: [
     AppComponent,
