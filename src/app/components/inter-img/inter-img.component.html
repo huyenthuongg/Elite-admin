@@ -1,0 +1,94 @@
+<div class="container">
+  <table class="tab-main">
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Image</th>
+      <th>Status</th>
+      <th>Edit</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Image_1</td>
+      <td>HomePage</td>
+      <td><img src="\assets\image\AModernFairytale-Revelry-featherandtwine-71_websize 1.png" alt=""></td>
+      <td><input type="checkbox"></td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square icon1" viewBox="0 0 16 16" (click)="parentModal.show()">
+          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle icon2" viewBox="0 0 16 16" (click)="openModal1(template)">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </td>
+    </tr>
+  </table>
+  <div>
+    <button class="btn-add"(click)="parentModal.show()">ADD NEW</button>
+  </div>
+</div>
+<div class="modal fade" bsModal #parentModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">CREATE NEW BLOGS</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="parentModal.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <DIV class="pop_left">
+            <p>Name</p>
+            <p>Category</p>
+            <p>Choose File</p>
+          </DIV>
+          <div class="pop_right">
+            <p >
+              <input type="textbox">
+            </p>
+            <p><select class="status">
+              <option>Homepage</option>
+              <option>Our Story</option>
+              <option>Payment</option>
+            </select></p>
+            <button class="btn-choose">Choose file</button>
+          </div>
+        </div>
+      </div>
+      <HR/>
+      <div class="btn2">
+        <button  class="btn-can" (click)="parentModal.hide()">Cancel</button>
+        <button class="btn-save" (click)="childModal.show()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" bsModal #childModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name2" class="modal-title pull-left">NEW PRODUCT HASE BEEN CREATED</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="childModal.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<pre class="card card-block card-header">{{message}}</pre>
+<ng-template #template>
+  <div class="text-center">
+    <p>Do you want to deleted?</p>
+    <br/>
+    <div>
+    <button type="button" class="btn-confirm" class="btn btn-default" (click)="confirm1()" >Yes</button>
+    <!-- <br/> -->
+    <button type="button" class="btn-confirm" class="btn btn-primary" (click)="decline1()" >No</button>
+  </div>
+</div>
+</ng-template>

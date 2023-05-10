@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AppComponent {
+export class HeaderComponent {
   title = 'EliteAdmin';
-  constructor(public router: Router) {}
-  // router: any;
+  router: any;
   public product : boolean = true;
   public blog : boolean = true;
   public info : boolean = true;
@@ -40,13 +38,4 @@ export class AppComponent {
   }
   selectedText: string = '';
   isChange: boolean = false;
-  // changeColor(text: string) {
-  //   // Tắt màu sắc của các dòng văn bản khác
-  //   document.querySelectorAll('.change-color').forEach((element) => {
-  //     element.classList.remove('color-change');
-  //   });
-  //   // Thay đổi màu sắc của dòng văn bản được chọn
-  //   this.selectedText = text;
-  //   document.querySelector(`span[data-text="${text}"]`).classList.add('color-change');
-  // }
 }

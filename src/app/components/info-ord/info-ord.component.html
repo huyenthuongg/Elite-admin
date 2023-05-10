@@ -1,0 +1,105 @@
+<div class="container">
+  <table class="tab-main">
+    <tr>
+      <th>No.</th>
+      <th>Order's ID</th>
+      <th>Customer's ID</th>
+      <th>Time</th>
+      <th>Total Price</th>
+      <th>Status</th>
+      <th>Detail</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>EOR111</td>
+      <td>EC111</td>
+      <td>16:40:37
+        Dec 21,
+        2023</td>
+      <td>$189.00</td>
+      <td>Shipping</td>
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square icon1" viewBox="0 0 16 16" (click)="parentModal.show()">
+          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+        </svg>
+      </td>
+    </tr>
+  </table>
+  <!-- <div>
+    <button class="btn-add"(click)="parentModal.show()">ADD NEW</button>
+  </div> -->
+</div>
+<div class="modal fade" bsModal #parentModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">ORDER DETAIL</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="parentModal.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <DIV class="pop_left">
+            <p>Order's ID</p>
+            <p>Customer's ID</p>
+            <p>Time</p>
+            <p>Total Price</p>
+            <p>Status</p>
+            <hr/>
+            <p>Customer Name</p>
+            <p>Phone Number</p>
+            <p>Address</p>
+            <p>Payment Method</p>
+          </DIV>
+          <div class="pop_right">
+            <p >
+              EOR111
+            </p>
+            <p>EC111</p>
+            <p>16:40:37, Dec 21, 2023</p>
+            <p>$189.000</p>
+            <p>Shipping</p>
+            <hr/>
+            <p>Nguyen Hoang Tinh</p>
+            <p>00000000</p>
+            <p>Distric 1, TPHCM</p>
+            <p>MOMO</p>
+          </div>
+        </div>
+        </div>
+      <HR/>
+      <div>
+        <table class="tab-quan">
+          <tr>
+            <th>#ELITE123</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Sky Satin Dress</td>
+            <td>1</td>
+            <td>$189.000</td>
+          </tr>
+        </table>
+      </div>
+      <div class="btn2">
+        <button  class="btn-can" (click)="parentModal.hide()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #childModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name2" class="modal-title pull-left">NEW PRODUCT HASE BEEN CREATED</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="childModal.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
