@@ -16,6 +16,11 @@ import { ProFabricsComponent } from './components/pro-fabrics/pro-fabrics.compon
 import { ProColorsComponent } from './components/pro-colors/pro-colors.component';
 import { BlogItlComponent } from './components/blog-itl/blog-itl.component';
 import { BlogInsComponent } from './components/blog-ins/blog-ins.component';
+import { LoginpageComponent } from './components/loginpage/loginpage.component';
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,10 +35,15 @@ import { BlogInsComponent } from './components/blog-ins/blog-ins.component';
     ProColorsComponent,
     BlogItlComponent,
     BlogInsComponent,
+    LoginpageComponent,
+    HeaderComponent,
+
+
 
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,HttpClientModule, ModalModule.forRoot(),TabsModule.forRoot()
   ],
   providers: [],

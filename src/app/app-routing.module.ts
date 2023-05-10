@@ -11,7 +11,9 @@ import { ProFabricsComponent } from './components/pro-fabrics/pro-fabrics.compon
 import { ProColorsComponent } from './components/pro-colors/pro-colors.component';
 import { BlogItlComponent } from './components/blog-itl/blog-itl.component';
 import { BlogInsComponent } from './components/blog-ins/blog-ins.component';
+import { LoginpageComponent } from './components/loginpage/loginpage.component';
 const routes: Routes = [
+  {path:'', component:LoginpageComponent},
   {path:'account', component:AccountsComponent},
   {path:'products', component:ProductsComponent},
   {path:'blog', component:BlogsComponent},
@@ -23,6 +25,8 @@ const routes: Routes = [
   {path:'colors', component:ProColorsComponent},
   {path:'Elite-ITL', component:BlogItlComponent},
   {path:'Inspiration', component:BlogInsComponent},
+  {path:'login', component:LoginpageComponent},
+
 ];
 
 @NgModule({
@@ -31,5 +35,8 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const RoutingComponent = [
-  AccountsComponent,BlogsComponent,ProductsComponent
+  AccountsComponent,BlogsComponent,ProductsComponent,
+  InfoOrdComponent,InfoCusComponent,InterImgComponent,
+  InterFooterComponent,ProFabricsComponent,ProColorsComponent,
+  BlogItlComponent,BlogInsComponent,LoginpageComponent
 ]
